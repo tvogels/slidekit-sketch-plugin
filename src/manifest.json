@@ -1,0 +1,53 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "Text to outlines (all)",
+      "identifier": "text-to-outlines",
+      "script": "./text-to-outlines.js"
+    },
+    {
+      "name": "Organize work space",
+      "identifier": "clean-up-workspace",
+      "script": "./clean-up-workspace.js"
+    },
+    {
+      "name": "Uniquify names",
+      "identifier": "make-unique",
+      "script": "./make-unique.js"
+    },
+    {
+      "name": "Delete [stage] in selection",
+      "identifier": "clear-stages",
+      "script": "./clear-stages.js"
+    },
+    {
+      "name": "Add [move] in selection",
+      "identifier": "set-move",
+      "script": "./set-move.js"
+    },
+    {
+      "name": "Playground",
+      "identifier": "playground",
+      "script": "./playground.js",
+      "handlers": {
+        "actions": {
+          "SelectionChanged.finish": "onSelectionChanged",
+          "run": "run"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "SlideKit",
+    "items": [
+      "text-to-outlines",
+      "clean-up-workspace",
+      "clear-stages",
+      "make-unique",
+      "set-move",
+      "playground"
+    ]
+  }
+}
