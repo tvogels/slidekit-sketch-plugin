@@ -8,6 +8,11 @@
       "script": "./text-to-outlines.js"
     },
     {
+      "name": "Layers to outlines (selection)",
+      "identifier": "outlines-selection",
+      "script": "./outlines-selection.js"
+    },
+    {
       "name": "Organize work space",
       "identifier": "clean-up-workspace",
       "script": "./clean-up-workspace.js"
@@ -28,6 +33,11 @@
       "script": "./set-move.js"
     },
     {
+      "name": "Add suffix in selection",
+      "identifier": "batch-append-name",
+      "script": "./batch-append-name.js"
+    },
+    {
       "name": "Playground",
       "identifier": "playground",
       "script": "./playground.js",
@@ -43,10 +53,12 @@
     "title": "SlideKit",
     "items": [
       "text-to-outlines",
+      "outlines-selection",
       "clean-up-workspace",
       "clear-stages",
       "make-unique",
       "set-move",
+      "batch-append-name",
       "playground"
     ]
   }
